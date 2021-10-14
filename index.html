@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Taste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+           <h3><span class="lime">MUSIC</span> TASTE</h3>
+           <ul>
+               <li><a href="" class="play-list">▶&nbsp;&nbsp;Play List</a></li>
+               <li><a href="" class="normal">Home</a></li>
+               <li><a href="" class="normal">Contact</a></li>
+               <li><a href="" class="normal">About</a></li>
+           </ul>
+        </div>
+        <div class="content">
+            <div class="lyrics">
+                <h3>Lyrics</h3>
+                <div class="lyrics-container">
+                    
+                </div>
+            </div>
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <div class="playlist-container">
+                    <div class="collection">
+                        <button class="select-music" onclick='play("./resources/Back To December (lyrics) - Taylor Swift.mp3","Back To December - Taylor Swift","./lyrics/back to december.txt");'>
+                            Back To December - Taylor Swift
+                        </button>
+                        <button class="select-music" onclick='play("./resources/Taylor Swift - Crazier (Lyrics).mp3","Back To December - Taylor Swift","./lyrics/crazier.txt");'>
+                            Crazier - Taylor Swift
+                        </button>
+                        <button class="select-music" onclick='play("./resources/Taylor Swift - Red (Lyrics).mp3","Red - Taylor Swift","./lyrics/red.txt");'>
+                            Red - Taylor Swift
+                        </button>
+                        <button class="select-music" onclick='play("./resources/Taylor Swift - White Horse (Lyrics).mp3","White Horse - Taylor Swift","./lyrics/white-horse.txt");'>
+                            White Horse - Taylor Swift
+                        </button>
+                        <button class="select-music" onclick='play("./resources/You Belong With Me - Taylor Swift (Lyrics) 🎵.mp3","You Belong With Me - Taylor Swift","./lyrics/you-belong-with-me.txt");'>
+                            You Belong With Me - Taylor Swift
+                        </button>
+                    </div>
+                    <div class="player">
+                        <button class="player-button">▶</button>
+                        <div class="player-title">Title</div>
+                        <div class="time">
+                            <div class="current">0:00</div>
+                            <div class="divider">/</div>
+                            <div class="length">00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
